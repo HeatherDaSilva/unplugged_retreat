@@ -130,11 +130,11 @@ p {
 }
  
 img {
- 
+ width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -171,6 +171,14 @@ address {
      margin: 0;
    }
 
+   header figure {
+     width: 60%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
    .header-divider {
      background: #3a3a3a;
      width: 100%;
@@ -193,6 +201,10 @@ address {
     display: flex;
     justify-content: space-around;
     width: 100%;
+   }
+
+   header nav ul li {
+     font-size: 1.125em;
    }
 
    footer {
@@ -233,6 +245,10 @@ address {
    /* -------------Mobile Styles - Homepage ----------- */
 
    .hero-area {
+    background: url(../img/jake-melara-30679-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -248,17 +264,45 @@ address {
    /***** Aside *****/
 
    aside {
-    background-color: 527158;
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
    }
 
+   aside .form {
+    margin-top: 30px;
+  }
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
    /***** Features *****/
 
    .features {
+    background: url('../img/rawpixel-800820-unsplash1.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -273,7 +317,7 @@ address {
      margin: 30px 0;
    }
 
-   .features-item-description {
+   .features .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,6 +325,7 @@ address {
    }
 
    .features p {
+    text-align: center;
     margin: 0;
   }
 
@@ -356,33 +401,9 @@ address {
      line-height: 1.333;
    }
 
-   /***** Button *****/
 
-   aside .form {
-    margin-top: 30px;
-  }
+
    
-  input[type=text] {
-    box-sizing: border-box;
-    width: 100%;
-    color: #2a423a;
-    font-style: italic;
-    padding: 1em;
-  }
-   
-  input[type=button] {
-    width: 100%;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-color: #2a423a;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.125em;
-    color: #e2e3ed;
-    border: none;
-    text-align: center;
-    text-transform: uppercase;
-  }
 
 /* ==========================================================================
    Helper classes
@@ -497,7 +518,7 @@ address {
 
   header .content-wrapper {
     width: 100%;
-    justify-content: space-between
+    justify-content: space-between;
   }
 
   header figure {
@@ -517,6 +538,10 @@ address {
   }
 
   /***** Hero Area *****/
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -565,9 +590,14 @@ address {
   .reviews h2 {
     width: 85%;
   }
-
+  .reviews article figure,
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -576,7 +606,7 @@ address {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -674,7 +704,7 @@ address {
    /* Hero */
    .hero-area h1 {
      font-size: 3.75em;
-     width: 60%;
+     width: 80%;
    }
    /* Aside */
   aside .content-wrapper {
@@ -684,6 +714,10 @@ address {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /* Features */
@@ -703,7 +737,7 @@ address {
   }
 
   .reviews article div {
-    width: 43%;
+    width: 42%;
   }
 
   footer h4 {
@@ -730,7 +764,7 @@ address {
   }
 
   .faq h4,
-  .faqp {
+  .faq p {
     font-size: 1.125em;
     line-height: 1;
   }
