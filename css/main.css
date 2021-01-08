@@ -655,8 +655,12 @@ address {
  }
 
  .mission-content p {
-   width: 45%;
- }
+  width: 45%;
+}
+
+.map figure {
+  padding-bottom: 45.5%;
+}
 
  .contact-section .content-wrapper h2 {
    width: 80%;
@@ -761,6 +765,9 @@ address {
   }
 
   /***** About Page *****/
+  .map figure {
+    padding-bottom: 37.5;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
